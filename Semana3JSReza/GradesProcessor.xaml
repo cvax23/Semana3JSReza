@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+             Title="Grades Processor"
+             NavigationPage.HasBackButton="False"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Semana3JSReza.GradesProcessor">
+    <StackLayout VerticalOptions="Center" Spacing="20">
+
+        <Label x:Name="lblMensaje" 
+			TextColor="Gray"
+			FontSize="20" 			  
+			HorizontalOptions="Center" 
+            HorizontalTextAlignment="Center"/>
+
+        <StackLayout Orientation="Horizontal" Spacing="20" Padding="10, 0">
+            <Entry x:Name="txtNota" 
+               TextColor="Gray"
+               FontSize="30" 
+               FontAttributes="Bold"
+               Placeholder="Ingrese Nota Seguimiento 1" 
+               HorizontalTextAlignment="Center"
+               Keyboard="Numeric"/>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" Spacing="20" Padding="100, 0">
+            <Button x:Name="btnRegresar" 
+                    Text="Regresar" 
+                    TextColor="White"                    
+			        BackgroundColor="#1dabf0"
+                    Clicked="btnRegresar_Clicked" />
+            <Button x:Name="btnIngresar" 
+                    Text="Ingresar"
+                    TextColor="White"                    
+			        BackgroundColor="#1dabf0"
+                    Clicked="btnIngresar_Clicked"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
